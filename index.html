@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Typing Mistake Checker</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div>
+
+        <label for="originalText">Original Text:</label>
+
+        <textarea id="originalText" rows="2" cols="50"></textarea>
+
+        <label for="typedText">Your Typed Text:</label>
+
+        <textarea id="typedText" rows="2" cols="50"></textarea>
+
+        <button onclick="checkMistakes()">Check Mistakes</button>
+
+        <div id="resultContainer">
+
+            <label for="outputResult">Output:</label>
+
+            <div id="outputResult"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
