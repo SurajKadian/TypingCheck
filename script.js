@@ -51,3 +51,9 @@ function findMistakes(original, typed) {
 
     return resultText;
 }
+
+function resetTextAreas() {
+    document.getElementById('originalText').value = '';
+    document.getElementById('typedText').value = '';
+    document.getElementById('outputResult').innerHTML = '';
+}
