@@ -1,0 +1,19 @@
+#text-container {
+
+    margin-bottom: 20px;
+
+}
+
+#result {
+
+    color: red;
+
+    font-weight: bold;
+
+}
+
+#outputResult {
+
+    font-family: 'Courier New', monospace;
+
+}
