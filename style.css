@@ -1,66 +1,172 @@
+/* The style sheet for the text comparison program */
+
+/* The font family and size for the whole web page */
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 16px;
+
 }
+
+/* The alignment and margin for the header */
+
+h1 {
+
+  text-align: center;
+
+  margin: 20px;
+
+}
+
+/* The alignment and margin for the paragraph */
+
+p {
+
+  text-align: center;
+
+  margin: 10px;
+
+}
+
+/* The layout and margin for the container div */
 
 .container {
-    text-align: center;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin: 10px;
+
 }
 
-.text-areas {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center; /* Center the text areas */
+/* The layout and margin for the text area divs */
+
+.text-area {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin: 10px;
+
 }
+
+/* The style and margin for the labels */
+
+label {
+
+  font-weight: bold;
+
+  margin: 10px;
+
+}
+
+/* The style and margin for the text areas */
 
 textarea {
-    width: calc(100% - 20px);
-    height: 80px;
-    padding: 10px;
-    resize: none;
+
+  border: 1px solid black;
+
+  margin: 10px;
+  
+  font-family: monospace;
+
 }
 
-.buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px; /* Adjust the margin as needed */
+/* The style and margin for the button */
+div.buttons {
+
+  display: flex; 
+
+  justify-content: space-between; 
+
 }
 
 button {
-    flex: 1; /* Distribute the available space equally between the buttons */
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  display: block;
+
+  margin: 10px auto;
+
+  padding: 10px;
+
+  border: none;
+
+  background-color: green;
+
+  cursor: pointer;
+
+  display: inline-block; 
+  
+  border-radius: 12px; 
+
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-button:active {
-    background-color: #3e8e41;
-}
-
-output {
-    margin-top: 20px;
-}
-/* ... (previous styles) */
+/* The style for the output div */
 
 .output {
-    margin-top: 20px;
-    border: 2px solid #ddd; /* Add a border to the output container */
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
 }
 
-/* ... (remaining styles) */
+/* The style for the output div */
+
+#result {
+
+  border: 1px solid black;
+
+  margin: 10px;
+
+  background-color: lightgray;
+
+  width: 800px;
+
+  height: 600px;
+
+  overflow: auto;
+  
+  font-family: monospace;
+  
+  font-size: 12px;
+
+}
+
+/* The style for the spelling errors */
+
+.spelling {
+
+  color: red;
+
+  text-decoration: underline;
+
+}
+
+/* The style for the missing words */
+
+.missing {
+
+  color: yellow;
+
+  font-weight: bold;
+
+}
+
+/* The style for the extra words */
+
+.extra {
+
+  color: blue;
+
+  text-decoration: line-through;
+
+}
